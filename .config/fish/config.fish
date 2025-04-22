@@ -8,18 +8,22 @@ if status --is-interactive
 end
 
 ## Run fastfetch if session is interactive
-if status --is-interactive && type -q fastfetch
-   fastfetch
-end
+# if status --is-interactive && type -q fastfetch
+#    fastfetch
+# end
+
+# path
+set -U fish_user_paths /home/fd/.local/bin
 
 # set default application
 set -gx EDITOR nvim
 
 # paru package manager
-alias ys 'yay -S'
-alias yss 'yay -Ss'
-alias yrsc 'yay -Rsc'
-alias ysyu 'yay -Syyu'
+alias prs 'paru -S'
+alias prss 'paru -Ss'
+alias prrsn 'paru -Rsn'
+alias prrsc 'paru -Rsc'
+alias prsyu 'paru -Syyu'
 
 # editor
 alias v 'nvim'
