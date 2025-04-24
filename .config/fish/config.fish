@@ -28,8 +28,18 @@ alias prsyu 'paru -Syyu'
 # editor
 alias v 'nvim'
 
-# explorer
+# file manage
 alias r 'ranger'
+
+# git
+alias lg 'lazygit'
+
+# ls pro
+alias ls 'exa'
+alias ll 'ls -l'
+alias la 'ls -a'
+alias lla 'ls -la'
+alias lt 'ls -T'
 
 # clash
 set -x https_proxy http://127.0.0.1:7890

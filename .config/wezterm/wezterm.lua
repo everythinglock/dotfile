@@ -19,7 +19,7 @@ M.font = wezterm.font_with_fallback({
 	{ family = "Source Han Sans CN", weight = "Medium" },
 })
 
-M.window_background_opacity = 0.92
+M.window_background_opacity = 0.95
 M.text_background_opacity = 0.9
 
 -- Prompt
