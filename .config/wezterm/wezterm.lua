@@ -19,6 +19,9 @@ M.font = wezterm.font_with_fallback({
 	{ family = "Source Han Sans CN", weight = "Medium" },
 })
 
+M.window_background_opacity = 0.92
+M.text_background_opacity = 0.9
+
 -- Prompt
 M.window_close_confirmation = "NeverPrompt"
 
@@ -27,36 +30,35 @@ M.keys = {
 	-- Turn off the default CMD-m Hide action, allowing CMD-m to
 	-- be potentially recognized and handled by the tab
 	{
-		key = 'Enter',
-		mods = 'ALT',
+		key = "Enter",
+		mods = "ALT",
 		action = act.DisableDefaultAssignment,
 	},
 	{
-		key = 'w',
-		mods = 'SHIFT|ALT',
-		action = act.CloseCurrentTab {confirm = true},
+		key = "w",
+		mods = "SHIFT|ALT",
+		action = act.CloseCurrentTab({ confirm = true }),
 	},
 	{
-		key = 't',
-		mods = 'SHIFT|ALT',
-		action = act.SpawnTab 'CurrentPaneDomain',
+		key = "t",
+		mods = "SHIFT|ALT",
+		action = act.SpawnTab("CurrentPaneDomain"),
 	},
-	{ key = 'k', mods = 'SHIFT|CTRL', action = act.ScrollByPage(-0.5) },
-	{ key = 'j', mods = 'SHIFT|CTRL', action = act.ScrollByPage(0.5) },
+	{ key = "k", mods = "SHIFT|CTRL", action = act.ScrollByPage(-0.5) },
+	{ key = "j", mods = "SHIFT|CTRL", action = act.ScrollByPage(0.5) },
 }
 for i = 1, 8 do
-  -- CTRL+ALT + number to activate that tab
-  table.insert(M.keys, {
-    key = tostring(i),
-    mods = 'CTRL|ALT',
-    action = act.ActivateTab(i - 1),
-  })
-  -- F1 through F8 to activate that tab
-  table.insert(M.keys, {
-    key = 'F' .. tostring(i),
-    action = act.ActivateTab(i - 1),
-  })
+	-- CTRL+ALT + number to activate that tab
+	table.insert(M.keys, {
+		key = tostring(i),
+		mods = "CTRL|ALT",
+		action = act.ActivateTab(i - 1),
+	})
+	-- F1 through F8 to activate that tab
+	table.insert(M.keys, {
+		key = "F" .. tostring(i),
+		action = act.ActivateTab(i - 1),
+	})
 end
-
 
 return M
