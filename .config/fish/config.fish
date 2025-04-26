@@ -7,34 +7,27 @@ if status --is-interactive
    source ("/usr/bin/starship" init fish --print-full-init | psub)
 end
 
-## Run fastfetch if session is interactive
-# if status --is-interactive && type -q fastfetch
-#    fastfetch
-# end
-
 # path
 set -U fish_user_paths /home/fd/.local/bin
 
 # set default application
-set -gx EDITOR nvim
+set -x EDITOR "nvim"
+set -x VISUAL "nvim"
 
-# paru package manager
+# alias
+## paru package manager
 alias prs 'paru -S'
 alias prss 'paru -Ss'
 alias prrsn 'paru -Rsn'
 alias prrsc 'paru -Rsc'
 alias prsyu 'paru -Syyu'
-
-# editor
+## editor
 alias v 'nvim'
-
-# file manage
+## file manage
 alias r 'ranger'
-
-# git
+## git
 alias lg 'lazygit'
-
-# ls pro
+## ls pro
 alias ls 'exa'
 alias ll 'ls -l'
 alias la 'ls -a'
@@ -48,3 +41,9 @@ set -x all_proxy socks5://127.0.0.1:7890
 
 # cd pro
 zoxide init --cmd cd fish | source
+
+# reload
+function reload
+    source ~/.config/fish/config.fish
+    echo "Fish config reloaded!"
+end

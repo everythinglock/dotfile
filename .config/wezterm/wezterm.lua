@@ -5,7 +5,7 @@ local M = wezterm.config_builder()
 M = {}
 
 -- appearance
-M.color_scheme = "Tokyo Night Moon"
+M.color_scheme = "Catppuccin Macchiato"
 M.enable_tab_bar = false
 M.font_size = 12
 M.window_padding = {
@@ -30,6 +30,7 @@ M.keys = {
 	-- Turn off the default CMD-m Hide action, allowing CMD-m to
 	-- be potentially recognized and handled by the tab
 	{
+		-- 关闭默认键位
 		key = "Enter",
 		mods = "ALT",
 		action = act.DisableDefaultAssignment,
