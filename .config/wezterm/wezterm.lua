@@ -6,6 +6,7 @@ M = {}
 
 -- appearance
 M.color_scheme = "Catppuccin Macchiato"
+M.default_cursor_style = "BlinkingBar" -- 可选：BlinkingBlock, SteadyBar, BlinkingUnderline, etc.
 M.enable_tab_bar = false
 M.font_size = 12
 M.window_padding = {
