@@ -1,0 +1,512 @@
+ls
+ls -a
+ls -l
+ll
+tree
+cd nvim
+exa 
+exa -l
+v
+zoxide 
+z nvim
+zoxide nvim
+cd ~/.config/nvim
+ls
+try
+explore
+explore -h
+chsh -s /usr/nu
+chsh -s /usr/bin/nu
+nvim
+sudo chsh -s /usr/bin/nu
+ls | length
+let x = 2
+$x
+let x = x+1
+let x = $x + 1
+$x
+let x = 3
+x
+$x
+let $x = 4
+$x
+cd ~/.config/nvim
+cd ~/.config/fish
+ls
+echo $nu.env-path
+cd ~/.config/nushell/
+ls
+v env.nu
+$env | reject config | transpose key val | each {|r| echo $"$env.($r.key) = '($r.val)'"} | str join (char nl)
+nvim env.nu
+prsyu
+v
+nvim
+$env | grep http
+$env | grep proxy
+$env | reject config | transpose key val | each {|r| echo $"$env.($r.key) = '($r.val)'"} | str join (char nl)
+prsyu
+$env | reject config | transpose key val | each {|r| echo $"$env.($r.key) = '($r.val)'"} | str join (char nl)
+v
+$env.APPDATA
+$env.EDITOR
+v $nu.env-path
+$env.config.hooks.pre_prompt
+ls | where type == file
+ls | any type == file
+ls | any 
+ls 
+ls | where size > 10mb
+cd ~/.config/nushell/
+ls | where type == file
+ls | where type == "file"
+ls -f
+ls -d
+ls -h
+ls --help
+ls | where type == "file"
+ls | table
+ls | table | where type == file
+[{a: 1} {a: 2}] | where a > 1
+ls
+cd ~/.config/nvim
+ls
+cd lua
+ls
+cd plugins/
+> ls | where size > 2kb
+where
+where --help
+ls | where name =~ "Car"
+list
+ls | where name =~ "Car"
+42 | describe 
+lsijfe | describe 
+'lsijfe' | describe 
+echo "sliejf<\n>lsiejflsiaef"
+date
+date now
+date to-timezone 
+date noe | date to-timezone 
+date now | date to-timezone 
+date now | date to-timezone utf+8
+date to-timezone --help
+date now | date to-timezone "+0900"
+date now | date to-timezone US/Hawaii
+sys
+sys cpu
+sys users
+sys disks 
+[one, two, three, four, five, six] | reduce {|curr, max|<\n>    if ($curr | str length) > ($max | str length) {<\n>        $curr<\n>    } else {<\n>        $max<\n>    }<\n>}
+ls | each { |row|<\n>    cd $row.name<\n>    echo $row.name<\n>}
+ls | each { |row|<\n>    cd $row.name<\n>    ls<\n>}
+st
+ast
+clear
+v $nu.env-path
+$it
+it
+ls
+chsh -s /usr/bin/fish
+sudo chsh -s /usr/bin/fish
+v
+chsh -s /usr/bin/nu
+v
+cd nushell
+cd ~/.config/nushell/
+ls
+v config.nu
+$env.DEEPSEEK_API_KEY
+v env.nu
+ls
+$nu.config-path
+v
+ls
+prs xonsh
+config nu
+cd nushell
+cd ~/.config/nushell/
+v
+ls
+v
+cd ~/.config/nushell/
+cd nushell
+cdi
+v
+cd ~/.config/nushell
+cd ~
+cdi
+v
+cdi
+prs fzf
+cdi
+cd ~/.config/nushell
+cd 
+cd nushell
+v
+cd nushell
+ls
+mv private.nu .private.nu
+v
+nvim
+$env.config
+v
+ls
+v
+keybindings list
+keybindings list | where type == edits
+clear
+ls
+ls | explore -i
+ls | explore --peek
+$nu 
+$nu | explore --peek
+$nu 
+$nu | table 
+$nu | table --help 
+$nu | table --list
+$nu | table 
+$nu
+$nu | where type == os-info
+$nu | table
+$nu | table | get os-info
+$nu | table | where category == os-info
+$nu | describe
+$nu | transpose key value
+$nu | transpose key value | table
+$nu | transpose key value | where key == os-info
+$nu | transpose key value | where key == os-info | get walue
+$nu | transpose key value | where key == os-info | get value
+$nu | transpose key value | where key == os-info | get value | transpose 
+$os-info
+$nu
+$nu.os-info
+v
+fastfetch 
+v
+$nu.os-info
+v
+$env.WHEAT_API_KEY
+v
+$env.WHEAT_API_KEY | wl-copy 
+v
+nvim
+lssize > 10mb
+v
+lssize > 10mb
+nvim
+ls_where type==dir
+ls_where type==file
+cd nvim
+ls_where type==file
+where type 
+type
+ls | describe
+ls | describe | table
+ls | table | describe 
+describe -h
+lssize > 10mb
+lswhere type == file
+v
+lswhere type == file
+ls
+ll
+all
+ls -l
+ls -t
+ls -du
+ls -d
+tree
+ls -a
+ls -la
+prsyu
+v
+cd .config/
+ls
+cd ..
+git log
+git reflog
+r
+git reset --hrad 48d9b2a
+git reset 48d9b2a
+lg
+git reset 48d9b2a
+lg
+r
+lg
+git reset --hard HEAD^
+lg
+r
+lg
+cd ..
+cd dotfile/
+ls
+lg
+r
+git reflog
+git revert -n 48d9b2a
+r
+git reflog
+git reset -h
+git reset --hard 48d9b2a
+git reflog
+r
+ls
+la
+stow -R .
+r
+ls
+v .stow-local-ignore
+stow -R .
+r
+v
+r
+v .stow-local-ignore
+stow -R .
+r
+stow -R .
+r
+stow -R .
+r
+v .stow-local-ignore
+mv .stow-local-ignore .stow-global-ignore
+v .stow-global-ignore
+v
+lg
+r
+v .stow-global-ignore
+stow .
+r
+stow .
+r
+mv .stow-global-ignore .stow-local-ignore
+r
+stow .
+r
+v .stow-global-ignore
+v .stow-local-ignore
+r
+stow .
+r
+cd nushell
+cd ~/.config/nushell
+ls
+cd nvim
+aider
+which aider
+cd nvim
+aider
+ls
+'init.lua' | path exists
+aiderge
+ai
+cd nvim
+ai
+aider
+ai 
+aider
+cd nvim
+aider
+cd nvim
+aider
+v
+cd nvim
+aider
+v
+cd nvim
+aider
+v
+cd nvim
+aider
+cd nvim
+aider 
+$env.PATH
+$env.config.color_config
+$env.config.color_config | sort
+edit $env.config 
+edit $nu.config-path
+v $nu.config-path
+v
+cd nushell
+ls
+mkdir themes
+touch themes/gruvbox-hard.nu
+v themes/gruvbox-hard.nu
+ls
+v config.nu
+ls
+v
+r
+v
+cd nushell
+cd nvim
+cd 
+prs kitty
+cd nvim
+cd hypr
+cd nvim
+cd
+v
+cd
+cd nvim
+cd hypr
+cd nushell
+ls
+touch themes/gruvbit.nu
+v themes/gruvbit.nu
+path -h
+v config.nu
+ls
+prsyu
+ls
+cd nvim
+ls
+v 
+v
+cd nvim
+v
+cd nvim
+cd dotfile/
+cd ~/.config/nvim
+aider
+cd ~
+v
+cd ~
+cd dotfile/
+ls
+v
+cd dotfile/
+v
+cd dotfile/
+ls
+v
+cd nushell
+v
+lsw | type == file
+v
+lsw type == file
+v
+nvim
+ls
+cd nvim
+ls
+cd dotfile
+lla
+prss hyprpicker
+prs hyprpicker 
+ls
+v
+cd nushell
+cd themes/
+ls
+v
+cd hypr
+ls
+v monitor.conf
+ls
+cd hypr
+ls
+v hyprland.conf
+v
+ls
+cd Pictures/
+ls
+cd wallpaper/
+ls
+paru carapace-bin
+prs carapace-bin
+v
+nvim
+cd nvim
+git log  HEAD~
+cd Document
+ls
+r
+v
+ls
+v
+r
+ls
+v
+ls
+v
+r
+ls
+v
+r
+lf
+prs lf
+lf
+cd .config
+cd lf
+mkdir lf
+curl https://raw.githubusercontent.com/gokcehan/lf/master/etc/lfrc.example -o ~/.config/lf/lfrc
+cd .config/lf
+cd ~/.config/lf
+ls
+v lfrc 
+v
+cd hypr
+ls
+v
+exit
+lf
+cd ranger
+ls
+v scope.sh 
+ls
+r
+lf
+v
+$env.shell
+$SHELL
+sh $env.SHELL
+v
+lf
+v
+lf
+prs yazi
+yazi 
+cd nushell
+ls
+cd yazi
+cd .config
+mkdir yazi
+cd yazi
+y
+touch yazi.toml
+v yazi.toml 
+touch keymap.toml
+v keymap.toml 
+touch theme.toml
+r
+y
+y
+v
+y
+prs nnn
+nnn
+prrsc nnn
+v
+cd dotfile
+ls
+la
+v README.md 
+fg
+gf
+fg
+job unfreeze 
+aider
+bat README.md 
+v README.md 
+cp ~/.config/yazi ~/dotfile/.config/
+cp -r ~/.config/yazi ~/dotfile/.config/
+rm -rf ~/.config/yazi
+ls
+la
+stow -R .
+y
+cd dotfile
+aider
+stow -h
+v README.md
