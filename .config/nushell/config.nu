@@ -64,7 +64,7 @@ starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.n
 source ~/.config/nushell/zoxide.nu
 
 # aider
-def aider [...argv] {
+def ai [] {
     let CONFIG_DIR = $"($env.HOME)/.config/aider"
 
     if (".aider.conf.yml" | path exists) {
@@ -79,7 +79,7 @@ def aider [...argv] {
         $env.AIDER_MODEL_METADATA = $"($CONFIG_DIR)/.aider.model.metadata.json"
     }
 
-    ^aider --config $env.AIDER_CONF --model-metadata-file $env.AIDER_MODEL_METADATA ...$argv
+    ^aider --config $env.AIDER_CONF --model-metadata-file $env.AIDER_MODEL_METADATA
 }
 alias aige = ^aider --model gemini-exp
 

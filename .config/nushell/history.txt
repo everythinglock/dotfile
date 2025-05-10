@@ -510,3 +510,504 @@ cd dotfile
 aider
 stow -h
 v README.md
+lazygit
+ls
+cd code_study/
+ls
+cd test/
+ls
+v test.py 
+ls
+v
+cd nvim
+ls
+aider
+ls
+v README.md 
+v
+ls -a
+lsa
+ll
+la
+la | fzf
+exa -l
+exa 
+exa -a
+exa -a | fzf
+exa -a | fzf | v
+exa -a | fzf | nvim
+prs thunar
+prs lxappearanceappearance
+prs lxappearance
+prs gtk-theme
+prss gtk-theme
+prs adapta-gtk-theme
+ldd $(which thunar) | grep gtk
+which thunar
+which thunar | get path
+strings (which thunar | get path) | grep gtk
+strings ...(which thunar | get path) | grep gtk
+...(which thunar | get path)
+strings ...(which thunar | get path)
+ldd (which thunar | get path.0) | grep gtk
+v ~/.config/gtk-3.0/settings.ini
+cd .config/
+cd gtk-3.0/
+ls
+prss oo-mox 
+prrsc lxappearance 
+prs lxappearance-gtk3 
+v ~/.config/gtk-3.0/settings.ini
+prs deepin-gtk-theme
+prrsc thunar 
+prs thunar-git
+sudo pacman -Scc
+prsyu
+prs nwg-look 
+prs thunar 
+prrsc lxappearance-gtk3 
+v ~/.config/gtk-3.0/settings.ini
+prs material-gtk-theme-git 
+v
+v 
+prs zen
+prrsc zen
+prs clockify-desktop 
+prrsc clockify-desktop 
+v
+cd nvim
+nu -c aider
+aider --help
+aider -h
+nu aider
+nu -c aider
+v
+nu -c ai
+nu -i -c ai
+nu -i ai
+nu -h
+nu -i -c 'ai'
+nvim
+cd ~/.local/bin/
+ls
+touch ai.nu
+v ai.nu 
+v
+ai
+cd ~/.local/bin/
+chmod +x ai.nu 
+ai.nu 
+cd nvim
+ai
+ai.nu
+v
+v
+cd ~/.local/bin/
+ls
+v
+cd nvim
+v ai.nu 
+rm ai.nu
+cd aider
+cd ~/.config/aider/
+ls
+la
+bat .aider.conf.yml .aider.model.metadata.json 
+v
+cd nvim
+v
+v
+aider --help
+v
+aider
+cd nvim
+aider
+v
+cd ~/.config/nushell
+ls
+la
+cd ~/.config/aider
+ls
+la
+v .aider.model.metadata.json 
+v .aider.conf.yml 
+v 
+cd nvim
+aider
+aider --help
+aider -h
+v
+cd nvim
+aider --help
+aider --model deepseek-v3 --openai-api-base https://chatapi.littlewheat.com/v1
+v
+aider --model openai/deepseek-v3 --openai-api-base https://chatapi.littlewheat.com/v1
+v
+cd nvim
+aider --help
+aider --help | grep dark
+v
+ls
+v
+mv ~/.config/nvim ~/.config/nvim_bak
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+cd .config/nvim
+ls
+rm -rf ~/.git
+nvim
+v
+ls
+y
+ls
+v index.html 
+v 
+v
+cd nvim
+v
+cd ~
+v
+cd ~/.local/share/nvim/
+ls
+cd lazy
+ls
+cd LazyVim/
+ls
+v
+tree
+v
+cd .local
+cd nvim
+ls
+cd lua
+y
+cd ~/.local/share/nvim/
+ls
+y
+ls
+pgrep nvim
+rg -rn nvim
+rg -h
+rg -h | rg '-r'
+rg -h | rg r
+rg -n blink
+cd yazi
+ls
+y
+rg require
+rg require lsp
+rg require.*lsp
+clear
+rg require.*lsp
+v keymap.toml 
+v
+cd nvim
+ls
+ls lua
+ls lua | tree
+mv ./lua/config/keymaps.lua ./lua/config/keymap.lua
+v
+rm -rf ~/.local/share/nvim/lazy
+v
+cd ~/.config/nvim_bak/
+ls
+cd lua/config/
+ls
+cd ~/.local/share/nvim/lazy/
+ls
+v
+nmcli
+nmcli device wifi show
+nmcli device wifi list 
+nmcli device wifi connect "真我GT 大师探索版" 
+nmcli -h
+nmcli device wifi connect "真我GT 大师探索版"  -h
+nmcli device wifi connect "真我GT 大师探索版" password fd123456.
+cd hypr
+ls
+nm-applet 
+nmcli device wifi connect "真我GT 大师探索版" 
+grub-install 
+v
+cd ~/.config/nvim_bak/
+ls
+y
+cd nvim
+v
+cd nvim
+v
+wezterm -h
+wezterm set-working-directory ~/.config
+cd ~/.config/nvim_bak/
+ls
+v
+mv ~/.config/nvim ~/.config/nvim_lazyvim
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
+git clone https://github.com/NvChad/starter ~/.config/nvim and nvim
+git clone https://github.com/NvChad/starter ~/.config/nvim; nvim
+cd hypr
+v hyprland.conf 
+cd nvim
+ls
+ls lua
+v hyprland.conf 
+v
+v hyprland.conf 
+v
+cd hypr
+v hyprland.conf 
+v
+v hyprland.conf 
+cd nvim
+cd hypr
+v hyprland.conf 
+gcc --version
+make -v
+rm -rf ~/.local/share/nvim
+v
+cd hypr
+rm -rf ~/.local/share/nvim/
+v
+v hyprland.conf 
+rm -rf ~/.local/state/nvim<\n>rm -rf ~/.local/share/nvim
+prs luarocks 
+v
+v hyprland.conf 
+rm -rf ~/.local/state/nvim<\n>rm -rf ~/.local/share/nvim
+rm -rf ~/.local/nvim
+LV_BRANCH='release-1.4/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.4/neovim-0.9/utils/installer/install.sh)
+lvim
+cd hypr
+lvim hyprland.conf
+node 
+lvim hyprland.conf
+v
+rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim ~/.local/state/nvim 
+v
+cd hypr
+v
+   cd hypr
+ls
+git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+cd nvim
+ls
+la
+cd ~/.config/nvim
+rm -rf "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone https://github.com/nvim-lua/kickstart.nvim.git ~/.config/nvim
+cd nvim
+ls
+la
+rm -rf .git .github
+ls
+la
+ls
+rm `${XDG_CONFIG_HOME:-$HOME/`
+rm -rf `${XDG_CONFIG_HOME:-$HOME/`
+ls
+nmcli device wifi  show
+ping baidu.com
+v
+git clone https://github.com/nvim-lua/kickstart.nvim.git ~/.config/nvim
+rm -rf ~/.config/nvim
+git clone https://github.com/nvim-lua/kickstart.nvim.git ~/.config/nvim
+v
+v
+exit
+fishh
+ls
+cd hypr
+v hyprland.conf 
+prs zen-browser 
+prrsc zen-browser 
+cd hypr
+ls
+cd hypr
+v hyprland.conf 
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+v
+cd nvim
+la
+rm -rf .git .github
+ls
+la
+v
+v hyprland.conf 
+v stylua.toml 
+cd hypr
+v LICENSE 
+v
+rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim 
+cd
+rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim 
+bash -c git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
+v hyprland.conf 
+bash -c 'git clone https://github.com/NvChad/starter ~/.config/nvim && nvim'
+cd nvim
+ls
+v init.lua 
+y
+cd
+rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim 
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+v
+y
+ls
+v recommendations.py 
+v
+v recommendations.py 
+python recommendations.py 
+v recommendations.py 
+y
+cd nvim_bak
+ls
+v
+y
+cd nushell
+ls
+$env.LLM_API_KEY
+v
+cd nvim_bak
+ls
+v
+prs python-pytest
+ls
+python test.py 
+v
+y
+cd test
+ls
+v test.py 
+v
+python test.py 
+cd test
+python test.py 
+v
+cd test
+v test.py 
+python test.py 
+cd Desktop/
+ls
+mkdir website2
+ls
+cd website2/
+ls
+v
+cd website2/
+cd test
+ls
+cd Desktop
+cd website2/
+ls
+v
+ls
+la
+v
+cd nvim_bak
+y
+v
+cd Desktop
+ls
+cd website2/ls
+cd website2
+ls
+v
+cd aider
+ls
+cd ~/.config/aider/
+ls
+la
+aider --help
+aider --help | grep base
+v
+v 
+cd ~/.config/aider/
+ls
+aider --help
+aider --help | key
+aider --help | grep key
+aider --help | grep model
+aider --help | grep api
+cd nvim
+aider
+cd nvim
+aider
+v
+cd nushell
+v config.nu 
+cat openai-$AIDER_API_KEY
+cat openai-($AIDER_API_KEY)
+cat openai-($$env.AIDER_API_KEY)
+cat openai-($env.AIDER_API_KEY)
+cat openai-$env.AIDER_API_KEY
+cd nvim
+ls
+aider
+v
+cd nvim
+aider
+aider openai=sk-WHD4xSKnM60ZAwwqnQdP3iKW3V7Jqp4N84kTWgaWejqQHxzE
+v
+ls
+ai
+aider 
+cd nvim
+la
+aider
+cd aider
+cd nvim
+aider
+aige
+v
+cd nvim
+aider
+v
+cd nvim
+ai 
+cd aider
+ls
+cd ~/.config/aider/
+ls
+la
+v .aider.conf.yml 
+cd nvim
+aider
+ai
+v 
+cd Desktop/website2/
+v 
+ls
+python3 -m http.server 8000
+v
+ls
+rm tom_biography.html
+v tom.html
+v watch_store.html 
+rm watch_store.html
+v
+ai
+ls
+xdg-open index.html
+v index.html 
+mkdir ~/Desktop/website3
+cd Desktop/website3
+ls
+v
+ls
+ai
+ls
+xdg-open index.html
+ls
+cd ..
+ls
+mkdir tom
+cd tom
+ai
+cd ..
+ls
+mkdir world2
+cd world2
+ls
+ai
+xdg-open index.html
+ai
